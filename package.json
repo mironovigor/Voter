@@ -1,0 +1,32 @@
+{
+  "name": "voter",
+  "version": "1.0.0",
+  "description": "Crypton test task",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npx hardhat compile",
+    "node": "npx hardhat node",
+    "test": "npx hardhat test",
+    "test:coverage": "npx hardhat coverage",
+    "test:rinkeby": "npx hardhat test --network rinkeby",
+    "deploy": "npx hardhat deploy",
+    "deploy:rinkeby": "npx hardhat deploy --network rinkeby",
+    "verify": "npx hardhat verify --contract contracts/Voter.sol:Voter  --network rinkeby"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@nomiclabs/hardhat-truffle5": "^2.0.6",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "bn-chai": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "hardhat": "^2.9.9",
+    "solidity-coverage": "^0.7.21"
+  }
+}
